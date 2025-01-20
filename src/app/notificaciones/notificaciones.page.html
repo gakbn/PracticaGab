@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notificaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Notificaciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Lista de notificaciones -->
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Notificación 1</h2>
+        <p>Has recibido un mensaje nuevo.</p>
+      </ion-label>
+      <ion-chip color="success">
+        <ion-label>Leída</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Notificación 2</h2>
+        <p>Tu pedido ha sido enviado.</p>
+      </ion-label>
+      <ion-chip color="warning">
+        <ion-label>En proceso</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Notificación 3</h2>
+        <p>Tu cuenta ha sido actualizada.</p>
+      </ion-label>
+      <ion-chip color="danger">
+        <ion-label>No leída</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
+
+  <!-- Tarjeta destacada para notificación importante -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Notificación Importante</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Recuerda actualizar tu información de contacto para seguir recibiendo notificaciones importantes.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón de acción para interactuar -->
+  <ion-button expand="full" color="primary">
+    Ver más detalles
+  </ion-button>
+
+  <!-- Footer con información adicional -->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title size="small">© 2025 Tu Empresa</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
