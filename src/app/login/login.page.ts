@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
 
   constructor(
     private navController: NavController,
-    private toastController: ToastController // Agregar ToastController aquí
+    private toastController: ToastController 
   ) { }
 
   ngOnInit() {

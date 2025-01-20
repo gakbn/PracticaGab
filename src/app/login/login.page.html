@@ -18,9 +18,17 @@
   <ion-item>
     <ion-input [(ngModel)]="password" label="Contraseña" type="password"></ion-input>
   </ion-item>
+
   
-  <ion-button color="primary" routerLink="/inicio"> .
+  <ion-button size="small">
+    <ion-button color="primary" routerLink="/inicio"> inicio </ion-button>
   </ion-button>  
   
-  <ion-button color="primary" (click)="login()">Iniciar sesión</ion-button>
+  <ion-button color="primary" expand="full" (click)="login()">
+    Iniciar sesión
+  </ion-button>
+  <div class="registro-link">
+    <ion-icon name="person-add-outline" slot="start"></ion-icon>
+    <a routerLink="/registro">¿No tienes cuenta? <strong>Regístrate aquí</strong></a>
+  </div>
 </ion-content>
